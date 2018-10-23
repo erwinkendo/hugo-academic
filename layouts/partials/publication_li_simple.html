@@ -6,5 +6,7 @@
       {{- delimit . ", " | markdownify -}}
     {{- end -}}
   </div>
-  <p>{{ partial "publication_links" (dict "content" . "is_list" 1) }}</p>
+  <p>{{ partial "publication_links" (dict "content" . "is_list" 1) }}
+  <span class="__dimensions_badge_embed__" data-doi={{ .Params.DOI }} data-style="large_rectangle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+  </p>
 </div>
